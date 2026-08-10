@@ -89,6 +89,9 @@ export default function Footer({ onRequestQuote }: FooterProps) {
             <li>
               <Link href="/dealer-inquiry" className="hover:text-white transition-colors">Dealer Inquiries</Link>
             </li>
+            <li>
+              <Link href="/business-profile" className="hover:text-white transition-colors font-semibold text-accent">Business Profile (PDF)</Link>
+            </li>
           </ul>
         </div>
 
