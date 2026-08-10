@@ -1,0 +1,262 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F172A;
+  --color-accent: #F97316;
+  --color-neutral-light: #F8FAFC;
+  
+  --color-navy-50: #f8fafc;
+  --color-navy-100: #f1f5f9;
+  --color-navy-200: #e2e8f0;
+  --color-navy-300: #cbd5e1;
+  --color-navy-400: #94a3b8;
+  --color-navy-500: #64748b;
+  --color-navy-600: #475569;
+  --color-navy-700: #334155;
+  --color-navy-800: #1e293b;
+  --color-navy-900: #0f172a;
+  
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fb923c;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+  --color-orange-900: #7c2d12;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  
+  --card-bg: #ffffff;
+  --card-border: #f1f5f9;
+  --section-alt: #f8fafc;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --header-bg: rgba(255, 255, 255, 0.75);
+  --header-border: rgba(241, 245, 249, 0.8);
+}
+
+.dark {
+  --background: #090d16;
+  --foreground: #f8fafc;
+  
+  --card-bg: #111827;
+  --card-border: #1f2937;
+  --section-alt: #0d1321;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --header-bg: rgba(17, 24, 39, 0.7);
+  --header-border: rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* Premium Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark-glass-panel {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #F97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orange-gradient-bg {
+  background: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
+}
+
+.navy-gradient-bg {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+}
+
+/* Subtle Shimmer Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* Hide default scrollbar for horizontal timelines but allow scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ==========================================================================
+   PREMIUM SMOOTH THEME TRANSITIONS & GLASS EFFECTS
+   ========================================================================== */
+
+/* Apply smooth transitions to theme-adaptive properties */
+body, 
+header, 
+nav, 
+section, 
+footer,
+div.bg-white,
+div.bg-navy-50,
+p, 
+span, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+input, 
+textarea, 
+select, 
+button, 
+a {
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 300ms cubic-bezier(0.4, 0, 0.2, 1), 
+              color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1),
+              backdrop-filter 300ms cubic-bezier(0.4, 0, 0.2, 1),
+              -webkit-backdrop-filter 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* Translucent Glass Header */
+.glass-header {
+  background-color: var(--header-bg) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border-bottom: 1px solid var(--header-border) !important;
+}
+
+/* Theme Adaptive Styles (No solid color overrides to preserve alpha opacity) */
+.bg-white {
+  background-color: var(--card-bg) !important;
+}
+
+.bg-navy-50 {
+  background-color: var(--section-alt) !important;
+}
+
+.text-primary {
+  color: var(--text-main) !important;
+}
+
+.text-navy-500,
+.text-navy-600,
+.text-gray-500,
+.text-gray-600 {
+  color: var(--text-muted) !important;
+}
+
+.text-gray-400 {
+  color: var(--text-muted) !important;
+  opacity: 0.8;
+}
+
+.border-gray-100,
+.border-gray-200,
+.border-navy-100 {
+  border-color: var(--card-border) !important;
+}
+
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  border-color: var(--card-border) !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 0.5;
+}
+
+/* Glass Panels */
+.glass-panel {
+  background: var(--header-bg) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid var(--header-border) !important;
+}
+
+/* Shadows adaptation */
+.dark .shadow-md,
+.dark .shadow-lg,
+.dark .shadow-2xl,
+.dark .shadow-xl {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Buttons primary overrides in dark mode */
+.dark button.bg-primary,
+.dark a.bg-primary,
+.dark input[type="submit"].bg-primary,
+.dark button.bg-primary *,
+.dark a.bg-primary * {
+  background-color: #f97316 !important;
+  color: #ffffff !important;
+}
+.dark button.bg-primary:hover,
+.dark a.bg-primary:hover {
+  background-color: #ea580c !important;
+}
+
+/* Modal overlays */
+.dark .bg-primary\/80 {
+  background-color: rgba(9, 13, 22, 0.85) !important;
+}
+
