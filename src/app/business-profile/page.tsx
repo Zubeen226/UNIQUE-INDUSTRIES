@@ -373,7 +373,7 @@ export default function BusinessProfile() {
                   className="border border-slate-200/80 rounded-xl overflow-hidden flex flex-col md:flex-row hover:shadow-md transition-shadow duration-300 break-inside-avoid print:shadow-none print:border print:border-gray-200"
                 >
                   {/* Left block - Machine Image */}
-                  <div className="relative w-full md:w-64 h-48 md:h-auto bg-slate-900 overflow-hidden shrink-0 print:w-48 print:h-44">
+                  <div className="relative w-full md:w-64 h-48 md:h-auto bg-slate-100 print:bg-white overflow-hidden shrink-0 print:w-48 print:h-44">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={mac.image}

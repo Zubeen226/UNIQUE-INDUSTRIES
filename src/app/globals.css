@@ -260,3 +260,86 @@ body {
   background-color: rgba(9, 13, 22, 0.85) !important;
 }
 
+/* ==========================================================================
+   PRINT / PDF EXPORT STYLES (FORCE PURE LIGHT THEME FOR PDF)
+   ========================================================================== */
+@media print {
+  /* Force light variables globally during print regardless of dark mode */
+  :root, html, body, .dark, .dark body {
+    --background: #ffffff !important;
+    --foreground: #0f172a !important;
+    --card-bg: #ffffff !important;
+    --card-border: #e2e8f0 !important;
+    --section-alt: #f8fafc !important;
+    --text-main: #0f172a !important;
+    --text-muted: #475569 !important;
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    color-scheme: light !important;
+  }
+
+  /* Force exact color reproduction for high-quality printing */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Reset dark mode overrides on containers during print */
+  .dark .bg-white,
+  .bg-white,
+  div[class*="bg-white"] {
+    background-color: #ffffff !important;
+  }
+
+  .dark .bg-slate-50,
+  .bg-slate-50,
+  .dark .bg-navy-50,
+  .bg-navy-50 {
+    background-color: #f8fafc !important;
+  }
+
+  .dark .text-primary,
+  .text-primary {
+    color: #0f172a !important;
+  }
+
+  .dark .text-slate-900,
+  .dark .text-slate-800,
+  .dark .text-slate-700,
+  .dark .text-slate-600,
+  .text-slate-900,
+  .text-slate-800,
+  .text-slate-700,
+  .text-slate-600 {
+    color: #1e293b !important;
+  }
+
+  .dark .text-slate-500,
+  .dark .text-slate-400,
+  .text-slate-500,
+  .text-slate-400 {
+    color: #475569 !important;
+  }
+
+  .dark .border-gray-100,
+  .dark .border-gray-200,
+  .dark .border-slate-200,
+  .border-gray-100,
+  .border-gray-200,
+  .border-slate-200 {
+    border-color: #e2e8f0 !important;
+  }
+
+  /* Keep brand accent color crisp and vibrant in PDF */
+  .text-accent {
+    color: #f97316 !important;
+  }
+  .border-accent {
+    border-color: #f97316 !important;
+  }
+  .bg-accent {
+    background-color: #f97316 !important;
+  }
+}
+
+
