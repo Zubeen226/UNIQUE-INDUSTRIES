@@ -434,7 +434,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                 <Link
                   href="/infrastructure"
-                  className="px-8 py-4 bg-accent hover:bg-orange-600 text-white font-bold text-sm rounded-lg shadow-lg shadow-orange-500/25 transition-all text-center flex items-center justify-center gap-2 cursor-pointer"
+                  className="px-8 py-4 bg-accent hover:bg-blue-700 text-white font-bold text-sm rounded-lg shadow-lg shadow-blue-500/25 transition-all text-center flex items-center justify-center gap-2 cursor-pointer"
                 >
                   Explore Capabilities
                   <ArrowRight size={16} />
@@ -490,7 +490,7 @@ export default function Home() {
                     "Expert Workforce",
                   ].map((feat) => (
                     <div key={feat} className="flex items-center gap-2.5">
-                      <div className="w-5 h-5 rounded-full bg-orange-50 text-accent flex items-center justify-center shrink-0">
+                      <div className="w-5 h-5 rounded-full bg-blue-50 text-accent flex items-center justify-center shrink-0">
                         <FileCheck2 size={12} className="stroke-[2.5]" />
                       </div>
                       <span className="text-xs font-semibold text-primary">{feat}</span>
@@ -750,7 +750,7 @@ export default function Home() {
                         setSelectedMachine(null);
                         openQuoteWithCategory(`Custom machinery - ${name}`);
                       }}
-                      className="px-4 py-2 bg-accent hover:bg-orange-600 text-white text-xs font-bold rounded-lg cursor-pointer transition-colors ml-auto"
+                      className="px-4 py-2 bg-accent hover:bg-blue-700 text-white text-xs font-bold rounded-lg cursor-pointer transition-colors ml-auto"
                     >
                       Inquire on this Capacity
                     </button>
@@ -783,7 +783,7 @@ export default function Home() {
                   key={idx}
                   className="bg-white p-6 rounded-xl border border-gray-100 flex gap-4 hover:shadow-lg transition-shadow duration-300"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-orange-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-lg bg-blue-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
                     <FileCheck2 size={20} />
                   </div>
                   <div>
@@ -869,7 +869,7 @@ export default function Home() {
                     className="bg-white p-6 rounded-xl border border-gray-100 flex flex-col justify-between group hover:border-accent hover:shadow-md transition-all duration-300"
                   >
                     <div className="space-y-4">
-                      <div className="w-10 h-10 rounded-lg bg-orange-50 text-accent flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
+                      <div className="w-10 h-10 rounded-lg bg-blue-50 text-accent flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-white transition-colors">
                         <Icon size={20} />
                       </div>
                       <h3 className="text-sm font-extrabold text-primary tracking-tight">
@@ -1029,29 +1029,29 @@ export default function Home() {
         </section>
 
         {/* CONTACT SECTION */}
-        <section className="py-24 bg-white relative">
+        <section id="contact" className="py-24 bg-white relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               
-              {/* Left Column - Details */}
+              {/* Info Column */}
               <div className="space-y-8">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-widest text-accent">
-                    Get in Touch
+                  <span className="text-xs font-bold uppercase tracking-widest text-accent block mb-2">
+                    Get In Touch
                   </span>
-                  <h2 className="text-3xl sm:text-4xl font-extrabold text-primary tracking-tight mt-2">
-                    Contact Our Sales Team
+                  <h2 className="text-3xl sm:text-4xl font-extrabold text-primary tracking-tight">
+                    Contact Unique Industries
                   </h2>
                   <div className="w-16 h-1 bg-accent rounded mt-4" />
                 </div>
 
                 <p className="text-sm text-navy-500 leading-relaxed">
-                  Have technical specifications to send? Or do you need a custom-built physical testing instrument? Submit details using our contact form or visit our factory coordinates.
+                  Have technical specifications or drawings to send? Or do you need custom CNC job work, dies, jigs & fixtures, or precision mechanical components? Submit details using our contact form or visit our factory coordinates.
                 </p>
 
                 <ul className="space-y-6 text-sm text-primary">
                   <li className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-orange-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-10 h-10 rounded-lg bg-blue-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
                       <MapPin size={20} />
                     </div>
                     <div>
@@ -1062,7 +1062,7 @@ export default function Home() {
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-orange-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-10 h-10 rounded-lg bg-blue-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
                       <Phone size={20} />
                     </div>
                     <div>
@@ -1078,7 +1078,7 @@ export default function Home() {
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-orange-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-10 h-10 rounded-lg bg-blue-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
                       <Mail size={20} />
                     </div>
                     <div>
@@ -1089,7 +1089,7 @@ export default function Home() {
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-orange-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-10 h-10 rounded-lg bg-blue-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
                       <Clock size={20} />
                     </div>
                     <div>

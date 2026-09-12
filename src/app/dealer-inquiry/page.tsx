@@ -101,7 +101,7 @@ export default function DealerInquiryPage() {
                   },
                 ].map((item, idx) => (
                   <div key={idx} className="flex gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-orange-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-10 h-10 rounded-lg bg-blue-50 text-accent flex items-center justify-center shrink-0 mt-0.5">
                       <Award size={20} />
                     </div>
                     <div>

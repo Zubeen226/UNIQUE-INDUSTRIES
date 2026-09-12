@@ -265,7 +265,7 @@ export default function BusinessProfile() {
           </Link>
           <button
             onClick={printProfile}
-            className="px-4 py-2 bg-accent hover:bg-orange-600 text-white rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-sm transition-colors cursor-pointer"
+            className="px-4 py-2 bg-accent hover:bg-blue-700 text-white rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-sm transition-colors cursor-pointer"
           >
             <Printer size={14} />
             Print / Save to PDF
@@ -335,7 +335,7 @@ export default function BusinessProfile() {
               const Icon = cap.icon;
               return (
                 <div key={i} className="border border-slate-200/80 rounded-xl p-5 space-y-3">
-                  <div className="w-9 h-9 rounded-lg bg-orange-50 text-accent flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-lg bg-blue-50 text-accent flex items-center justify-center">
                     <Icon size={18} />
                   </div>
                   <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wide leading-tight">
