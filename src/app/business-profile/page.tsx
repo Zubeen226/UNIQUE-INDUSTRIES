@@ -246,7 +246,7 @@ export default function BusinessProfile() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 py-10 px-4 sm:px-6 lg:px-8 print:bg-white print:text-black print:p-0 print:m-0">
+    <div className="business-profile-page min-h-screen bg-slate-50 text-slate-900 py-10 px-4 sm:px-6 lg:px-8 print:bg-white print:text-black print:p-0 print:m-0">
       {/* Controls Container - Hidden on print */}
       <div className="max-w-4xl mx-auto mb-8 flex justify-between items-center bg-white p-4 rounded-xl shadow-sm border border-gray-100 print:hidden">
         <div className="flex items-center gap-2.5">
@@ -265,7 +265,7 @@ export default function BusinessProfile() {
           </Link>
           <button
             onClick={printProfile}
-            className="px-4 py-2 bg-accent hover:bg-blue-700 text-white rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-sm transition-colors cursor-pointer"
+            className="px-4 py-2 bg-accent hover:bg-sky-700 text-white rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-sm transition-colors cursor-pointer"
           >
             <Printer size={14} />
             Print / Save to PDF
@@ -274,7 +274,7 @@ export default function BusinessProfile() {
       </div>
 
       {/* Main Profile Document Sheet */}
-      <div className="max-w-4xl mx-auto bg-white p-12 rounded-2xl shadow-xl border border-gray-200/60 print:shadow-none print:border-none print:p-0 print:m-0 relative overflow-hidden">
+      <div className="profile-card max-w-4xl mx-auto bg-white p-12 rounded-2xl shadow-xl border border-gray-200/60 print:shadow-none print:border-none print:p-0 print:m-0 relative overflow-hidden">
         {/* Decorative corner element - Hidden on print */}
         <div className="absolute top-0 right-0 w-40 h-40 bg-accent/5 rounded-full translate-x-20 -translate-y-20 print:hidden" />
 
