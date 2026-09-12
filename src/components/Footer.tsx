@@ -58,7 +58,7 @@ export default function Footer({ onRequestQuote }: FooterProps) {
             />
           </div>
           <p className="text-xs text-gray-400 leading-relaxed">
-            Unique Industries is a premier manufacturer of high-quality laboratory, scientific, electrical, mechanical, and material testing instruments in India.
+            Unique Industries is a premier manufacturer of high-precision CNC turned components, custom jigs & fixtures, tooling, and heavy mechanical assemblies in India.
           </p>
           <div className="flex items-center gap-3.5">
             <Link href="https://linkedin.com" target="_blank" className="w-8 h-8 rounded-lg bg-navy-800 hover:bg-accent text-gray-300 hover:text-white flex items-center justify-center transition-colors">

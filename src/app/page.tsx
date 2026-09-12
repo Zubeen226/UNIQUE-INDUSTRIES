@@ -419,16 +419,16 @@ export default function Home() {
               {/* Engineering Tag */}
               <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest bg-accent/10 border border-accent/20 text-accent mb-6">
                 <Sparkles size={12} />
-                Engineering Precision Instruments
+                Precision Mechanical Engineering
               </span>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
-                Precision Testing Instruments <br className="hidden md:inline" />
+                Precision CNC Machining & Tooling <br className="hidden md:inline" />
                 <span className="text-accent">Engineered for Accuracy</span>
               </h1>
 
               <p className="text-lg text-gray-300 font-medium leading-relaxed mb-8 max-w-2xl">
-                Unique Industries manufactures high-quality laboratory, scientific, electrical, mechanical, and material testing instruments that conform to international quality standards.
+                Unique Industries manufactures high-quality precision CNC turned components, custom jigs & fixtures, heavy metal tooling, and mechanical assemblies conforming to international quality standards.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -475,11 +475,11 @@ export default function Home() {
                 <div className="w-16 h-1 bg-accent rounded" />
 
                 <p className="text-sm text-navy-500 leading-relaxed">
-                  Established in Ghaziabad, Unique Industries is a premier manufacturer and supplier of high-grade industrial components. Under the leadership of Mohd. Rafiq Ansari, we have grown to become a trusted name in the sector.
+                  Established in Ghaziabad, Unique Industries is a premier manufacturer and supplier of high-grade mechanical components. Under the leadership of Mohd. Rafiq Ansari, we have grown to become a trusted name in the sector.
                 </p>
 
                 <p className="text-sm text-navy-500 leading-relaxed">
-                  We specialize in CNC/VMC parts, Jig Fixtures, and comprehensive industrial supplies. Our commitment to quality and innovation drives us to deliver the best solutions to our clients.
+                  We specialize in Precision CNC Machined Components, Custom Jigs & Fixtures, Tooling, and heavy mechanical component fabrication. Our commitment to quality and precision drives us to deliver the best solutions to our clients.
                 </p>
 
                 {/* Features Grid */}

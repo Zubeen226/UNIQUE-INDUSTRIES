@@ -27,19 +27,19 @@ export default function BusinessProfile() {
 
   const capabilities = [
     {
-      title: "Precision CNC/VMC Machining",
-      desc: "High-grade turning, boring, and profiling using multi-axis Japanese and domestic CNC centers (LMW & Feeler VMC).",
+      title: "Precision CNC Machining",
+      desc: "High-grade turning, boring, and profiling using multi-axis Japanese and domestic CNC centers (LMW LL20T L5).",
       icon: Cpu,
     },
     {
       title: "Custom Jig & Fixture Design",
-      desc: "Specialized mechanical assemblies engineered for repeat component manufacturing and quality stress testing.",
+      desc: "Specialized mechanical assemblies, custom jigs, and workholding fixtures engineered for repeat precision component manufacturing.",
       icon: Settings,
     },
     {
-      title: "Material Testing Instrumentation",
-      desc: "Quality verification instruments conforming to national and global standards for rubber, plastic, cables, and textiles.",
-      icon: ShieldCheck,
+      title: "Mechanical Fabrication & Tooling",
+      desc: "High-accuracy custom tooling, metal component fabrication, surface grinding, plasma cutting, and structural welding for industrial machinery.",
+      icon: Wrench,
     },
   ];
 
@@ -288,7 +288,7 @@ export default function BusinessProfile() {
               </h1>
             </div>
             <p className="text-xs text-slate-500 uppercase tracking-widest font-bold">
-              Manufacturer of Precision Industrial Components & Testing Instruments
+              Manufacturer of Precision Industrial Components, Tooling & Mechanical Assemblies
             </p>
           </div>
           <div className="text-left md:text-right text-xs text-slate-500 space-y-1">
@@ -305,7 +305,7 @@ export default function BusinessProfile() {
               Executive Overview
             </h2>
             <p className="text-xs text-slate-600 leading-relaxed text-justify">
-              Established in Ghaziabad, Uttar Pradesh, <strong>Unique Industries</strong> is a premier engineering manufacturer and industrial supplier specializing in high-grade CNC/VMC machined components, specialized jigs & fixtures, and comprehensive material testing instrumentation. Under the veteran leadership of <strong>Mohd. Rafiq Ansari</strong>, we have built a trusted reputation across manufacturing, automotive, and laboratory testing sectors in India by committing to premium quality materials, state-of-the-art machinery, and an expert engineering workforce.
+              Established in Ghaziabad, Uttar Pradesh, <strong>Unique Industries</strong> is a premier mechanical engineering manufacturer and industrial supplier specializing in high-grade CNC turning & machined components, specialized jigs & fixtures, precision tooling, and heavy mechanical component fabrication. Under the veteran leadership of <strong>Mohd. Rafiq Ansari</strong>, we have built a trusted reputation across manufacturing, automotive, and industrial engineering sectors in India by committing to premium quality materials, state-of-the-art machinery, and an expert engineering workforce.
             </p>
           </div>
 
@@ -316,11 +316,11 @@ export default function BusinessProfile() {
             </div>
             <div className="bg-slate-50 p-4 rounded-xl border border-gray-100 text-center print:bg-white print:border">
               <h4 className="text-lg font-bold text-accent">Advanced</h4>
-              <p className="text-[10px] text-slate-500 uppercase font-bold tracking-wide mt-1">In-House CNC/EDM Shop</p>
+              <p className="text-[10px] text-slate-500 uppercase font-bold tracking-wide mt-1">In-House CNC & EDM Shop</p>
             </div>
             <div className="bg-slate-50 p-4 rounded-xl border border-gray-100 text-center print:bg-white print:border">
-              <h4 className="text-lg font-bold text-accent">ASTM / ISO</h4>
-              <p className="text-[10px] text-slate-500 uppercase font-bold tracking-wide mt-1">Compliant Calibration</p>
+              <h4 className="text-lg font-bold text-accent">Micron Precision</h4>
+              <p className="text-[10px] text-slate-500 uppercase font-bold tracking-wide mt-1">High Accuracy Machining</p>
             </div>
           </div>
         </div>
@@ -463,24 +463,24 @@ export default function BusinessProfile() {
           </h2>
           <div className="bg-slate-50 p-5 rounded-xl border border-slate-200/50 space-y-4 print:bg-white print:border">
             <p className="text-xs text-slate-600 leading-relaxed">
-              Every instrument designed and manufactured at Unique Industries undergoes multi-stage inspections using master gauges traceable to national standards:
+              Every mechanical component, jig, and fixture manufactured at Unique Industries undergoes multi-stage inspections using master gauges traceable to national standards:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
               <div className="flex gap-2">
                 <CheckCircle size={15} className="text-emerald-600 shrink-0 mt-0.5" />
-                <span className="text-slate-600 text-[11px]">Strict calibration conforming to ASTM, ISO, and BIS guidelines.</span>
+                <span className="text-slate-600 text-[11px]">Strict dimensional accuracy conforming to ISO and BIS engineering guidelines.</span>
               </div>
               <div className="flex gap-2">
                 <CheckCircle size={15} className="text-emerald-600 shrink-0 mt-0.5" />
-                <span className="text-slate-600 text-[11px]">Traceable certification accompanying all mechanical stress sensors.</span>
+                <span className="text-slate-600 text-[11px]">Micron-level tolerance verification for internal boring & turned shafts.</span>
               </div>
               <div className="flex gap-2">
                 <CheckCircle size={15} className="text-emerald-600 shrink-0 mt-0.5" />
-                <span className="text-slate-600 text-[11px]">Extensive pre-packing load test runs simulating severe operations.</span>
+                <span className="text-slate-600 text-[11px]">Rigorous alignment and load testing on all custom jigs & fixture assemblies.</span>
               </div>
               <div className="flex gap-2">
                 <CheckCircle size={15} className="text-emerald-600 shrink-0 mt-0.5" />
-                <span className="text-slate-600 text-[11px]">Physical calibration using certified master weights and load cells.</span>
+                <span className="text-slate-600 text-[11px]">Physical inspection using certified verniers, micrometers & dial gauges.</span>
               </div>
             </div>
           </div>

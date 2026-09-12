@@ -10,19 +10,18 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Unique Industries | Precision Testing Instruments Manufacturer",
+    default: "Unique Industries | Precision CNC Machining & Mechanical Components",
     template: "%s | Unique Industries",
   },
   description:
-    "Unique Industries manufactures high-quality laboratory, scientific, electrical, mechanical, and material testing instruments. Designed for precision and reliability.",
+    "Unique Industries manufactures high-precision CNC turned components, custom jigs & fixtures, tooling, and heavy mechanical component assemblies in Ghaziabad, India.",
   keywords: [
-    "Testing Instruments",
-    "Material Testing Machines",
-    "Laboratory Equipment",
-    "Cable Testing Instruments",
-    "Rubber Testing Instruments",
-    "Plastic Testing Instruments",
-    "Scientific Instruments",
+    "Precision CNC Machining",
+    "CNC Turning Components",
+    "Custom Jigs & Fixtures",
+    "Mechanical Fabrication",
+    "Industrial Machine Components",
+    "Tooling & Fixtures",
     "Precision Engineering India",
     "Unique Industries",
   ],
@@ -35,9 +34,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Unique Industries | Precision Testing Instruments Manufacturer",
+    title: "Unique Industries | Precision CNC Machining & Mechanical Components",
     description:
-      "Unique Industries manufactures high-quality laboratory, scientific, electrical, mechanical, and material testing instruments conforming to international standards.",
+      "Unique Industries manufactures high-precision CNC turned components, custom jigs & fixtures, tooling, and heavy mechanical component assemblies.",
     url: "https://www.uniqueindustries.co.in",
     siteName: "Unique Industries",
     locale: "en_IN",
@@ -67,9 +66,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Manufacturer",
     "name": "Unique Industries",
-    "alternateName": "Unique Testing Instruments",
+    "alternateName": "Unique Precision Engineering",
     "description":
-      "Manufacturer of scientific, laboratory, electrical, mechanical, and material testing instruments.",
+      "Manufacturer of precision CNC turned components, custom jigs & fixtures, tooling, and mechanical assemblies.",
     "url": "https://www.uniqueindustries.co.in",
     "address": {
       "@type": "PostalAddress",
